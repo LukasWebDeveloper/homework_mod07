@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    max-width: 60%;
+    margin: auto auto;
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+hr {
+    height: 5px;
+    width: 100%;
+    border: 0;
+    border-top: 3px solid rgb(238, 238, 238);
+}
+
+.form__p {
+    background-color: white;
+    font-size: 22px;
+    padding: 0 20px;
+
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    margin: 10px auto;
+    padding: 0 20px;
+
+}
+
+.body__div {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.newTask {
+    border-style: solid;
+    margin-right: 20px;
+    padding: 0 10px;
+    border-color: rgb(238, 238, 238);
+    flex-grow: 1;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+::placeholder {
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+.button--addTask {
+    color: rgb(238, 238, 238);
+    background-color: teal;
+    border: none;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.div--tasks {
+    background-color: white;
+    font-size: 22px;
+    padding: 0;
+    width: 100%;
+    min-height: 150px;
+
+}
+
+.ul__p--header {
+    padding: 0 20px;
+}
+
+.taskContent {
+    display: flex;
+    padding: 0 2%;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+
+
+@media (max-width: 550px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        max-width: 90%;
+        margin: auto auto;
+        background-color: rgb(238, 238, 238);
+    }
+
+    .form {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        padding-top: 10px;
+        background-color: white;
+        margin: 0 auto;
+        flex-wrap: 1;
+    }
+
+    .form__div {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        padding-top: 10px;
+    }
+
+    .newTask {
+        border-style: solid;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 40px;
+        border-color: rgb(238, 238, 238);
+    }
+
+    .button--addTask {
+        width: 100%;
+    }
+
+}

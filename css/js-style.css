@@ -1,0 +1,43 @@
+.js-tasks {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+
+.js-list__item--done {
+    text-decoration: line-through;
+}
+
+.js-list__item {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+
+}
+
+.js-greenToggle {
+    vertical-align: middle;
+    padding-left: 1%;
+    align-self: flex-start;
+}
+
+.js-redDelete {
+    vertical-align: middle;
+    padding-right: 1%;
+    align-self: flex-start;
+}
+
+@media (max-width: 500px) {
+    .js-greenToggle {
+        vertical-align: middle;
+        padding-left: 1%;
+        align-self: center;
+    }
+
+    .js-redDelete {
+        vertical-align: middle;
+        padding-right: 1%;
+        align-self: center;
+    }
+}
