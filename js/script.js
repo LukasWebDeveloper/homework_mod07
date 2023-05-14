@@ -2,10 +2,6 @@
 {
     const tasks = [
         {
-            content: "Wystylować CSS listy zadań",
-            done: true,
-        },
-        {
             content: "stworzyć button `toggle` zakończonego zadania",
             done: true,
         },
@@ -18,13 +14,37 @@
             done: true,
         },
         {
+            content: "stworzyć stylizacje css do listy zadań z pracy domowej mod 06",
+            done: true,
+        },
+        {
             content: "stworzyć focus() do button addTask",
             done: true,
         },
     ];
 
+    const listTasksUpdated = [
+        ...tasks.slice(0, 3),
+        ...tasks.slice(4),
+        {
+            content: "refactor listy zadań zgodnie z immutability",
+            done: true,
+        },
+    ];
+
+    const listTasksUpdated2 = [
+        ...listTasksUpdated,
+        {
+            content: "dodaj 2 przyciski, 1 pokazuje/ukrywa \"done\" zadania, 2 oznacza wszystkie ukończone zadania ",
+            done: false,
+        }
+    ];
+
+    const listTasksUpdated3 = [
+    ];
+
     const addNewTask = (newTaskInput) => {
-        tasks.push({
+        listTasksUpdated3.push({
             content: newTaskInput.value.trim(),
         });
 
@@ -32,12 +52,12 @@
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        listTasksUpdated3.splice(taskIndex, 1);
         render();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        listTasksUpdated3[taskIndex].done = !listTasksUpdated3[taskIndex].done;
         render();
     }
 
@@ -64,7 +84,7 @@
     const render = () => {
         let htmlString = "";
 
-        for (const task of tasks) {
+        for (const task of listTasksUpdated3) {
             htmlString += `
                 <li
                     class="js-list__item ${task.done ? "js-list__item--done" : ""}"
