@@ -93,7 +93,44 @@ hr {
 
 }
 
+.line__taskList--display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+.buttonsTasks {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(6, 205, 205);
+    
+    margin: auto 0;
+    padding: 0 30px;
+}
+
+.linkTask--display {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: teal;
+    border: none;
+    background-color: #fff;
+}
+
+.linkTask--done {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: teal;
+    border: none;
+    background-color: #fff;
+}
+
+
 .ul__p--header {
+    display: flex;
+    /* width: 200px; */
     padding: 0 20px;
 }
 
